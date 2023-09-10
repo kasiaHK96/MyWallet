@@ -18,11 +18,15 @@ public class WalletService {
     private Expense expense;
     private Income income;
 
+
     Scanner scanner = new Scanner(System.in);
 
     public WalletService(AccountBalance accountBalance) {
 
         this.accountBalance = accountBalance;
+    }
+
+    public WalletService(Scanner mockedScanner) {
     }
 
 
@@ -89,4 +93,6 @@ public class WalletService {
 
         return accountBalance.getBalance();
     }
+
+
 }

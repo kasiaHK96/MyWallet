@@ -33,7 +33,8 @@ public class AccountBalance {
         return expenseTransactions;
     }
 
-    public void showBalance() {
+    public double showBalance() {
         System.out.println("Current balance:" + balance);
+        return balance;
     }
 }
